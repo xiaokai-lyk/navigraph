@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>BNDS Campus Navigation</title>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css.css') }}>
+    <script src={{ url_for('static', filename='index.js') }}></script>
+
+</head>
+<body>
+    <h1>Welcome!</h1>
+
+
+    <form id="dropdownForm">
+        <label for="source">Source:</label>
+        <select id="source" name="source">
+            <option value="">Not Available</option>
+        </select>
+
+        <label for="target">Target:</label>
+        <select id="target" name="target">
+            <option value="">Not Available</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <img id="resultImage" src="" alt="Result will appear here" style="max-width: 100%; display: none;">
+
+    <div id="ad">
+        <p>
+            <strong>
+                Powered by group Navi-graph!
+            </strong><br />
+            This page is made by<a href="https://space.bilibili.com/1740338174">@XKXK</a>
+        </p>
+    </div>
+</body>
+</html>

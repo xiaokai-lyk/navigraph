@@ -1,0 +1,7 @@
+#ad {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-style: dotted;
+    background-color: rgba(255,255,255,0.33);
+}
