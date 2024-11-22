@@ -1,11 +1,11 @@
 from math import sqrt
 import matplotlib.pyplot as plt
-
+"""
 backGroundImg=plt.imread("campus.png")
 fig,ax=plt.subplots()
 ax.imshow(backGroundImg,extent=[0,640,0,480])
 plt.show()
-"""
+
 xy_dict={
 		"0": [ 187, 205 ],
 		"1": [ 103, 181 ],
@@ -56,10 +56,11 @@ xy=[
 """
 for i in xy_dict:
 	xy.append(xy_dict[i])
+	"""
 for it in enumerate(xy):
     i,a=it
-    print("{}:{},".format(i,a))
-	"""
+    print("\"{}\":{},".format(i,a))
+	
  
 paths=[]
 while True:

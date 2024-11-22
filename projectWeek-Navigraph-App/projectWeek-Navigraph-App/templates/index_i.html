@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <title>BNDS Campus Navigation</title>
     <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css.css') }}>
-    <script src={{ url_for('static', filename='index.js') }}></script>
+    <script src={{ url_for('static', filename='index_i.js') }}></script>
 
 </head>
 <body>
@@ -14,20 +14,20 @@
         <h1>Welcome!</h1>
 
         <form id="dropdownForm">
-            <label for="source">Source:</label>
-            <select id="source" name="source">
-                <option value="">Not Available</option>
-            </select>
-
             <label for="target">Target:</label>
             <select id="target" name="target">
                 <option value="">Not Available</option>
             </select>
 
+            <label for="building">Building:</label>
+            <select id="building" name="building">
+                <option value="Aspiration Building" label="Aspiration Building"></option>
+            </select>
+
             <button type="submit">Submit</button>
         </form>
 
-        <img id="resultImage" src="" alt="Result will appear here" style="max-width: 100%; display: none;">
+        <img id="resultImage" src="" alt="Result will appear here" style="max-width: 100%;">
 
         <div id="ad">
             <p>

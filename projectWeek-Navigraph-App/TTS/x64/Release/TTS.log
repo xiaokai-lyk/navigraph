@@ -1,0 +1,11 @@
+﻿D:\Microsoft\Visual Studio\IDE 2022\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (speech.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  TTS.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\sphelper.h(1319,13): warning C4996: 'GetVersionExW': was declared deprecated
+  (compiling source file 'TTS.cpp')
+  
+  Generating code
+  1 of 144 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  TTS.vcxproj -> E:\python-development\projectWeek-Navigraph-App\x64\Release\TTS.exe

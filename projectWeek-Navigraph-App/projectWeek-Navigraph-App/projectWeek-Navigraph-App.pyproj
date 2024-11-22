@@ -31,10 +31,12 @@
   <ItemGroup>
     <Content Include="node_list.json" />
     <Content Include="static\css.css" />
+    <Content Include="static\index_i.js" />
     <Content Include="static\index.js" />
     <Content Include="templates\404.html" />
     <Content Include="templates\err.html" />
     <Content Include="templates\index.html" />
+    <Content Include="templates\index_i.html" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|projectWeek" />

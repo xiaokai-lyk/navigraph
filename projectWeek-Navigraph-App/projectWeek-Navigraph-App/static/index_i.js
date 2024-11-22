@@ -2,7 +2,7 @@
 async function loadOptions() {
     try {
         // Sending POST request to fetch options
-        const response = await fetch('/api/nodes', {
+        const response = await fetch('/api/nodes_i', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -17,22 +17,19 @@ async function loadOptions() {
         const data = await response.json();
 
         // Populate dropdown menus with the received data
-        populateDropdown('source', data);
         populateDropdown('target', data);
     } catch (error) {
         console.error('Error loading options:', error);
     }
-
-
     //INITIAL EMPTY MAP
     try {
-        const response = await fetch('/api/navi', {
+        const response = await fetch('/api/internalNavi', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
 
             },
-            body: JSON.stringify({ source: 0, target: 0 })
+            body: JSON.stringify({ building: "Aspiration Building", target: 0 })
         });
 
         if (response.status == 200) {
@@ -77,17 +74,17 @@ function populateDropdown(elementId, options) {
 window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('dropdownForm').addEventListener('submit', async (event) => {
         event.preventDefault();
-        const sourceValue = document.getElementById('source').value;
+        const buildingName = document.getElementById('building').value;
         const targetValue = document.getElementById('target').value;
         console.log("loading navigation")
         try {
-            const response = await fetch('/api/navi', {
+            const response = await fetch('/api/internalNavi', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
 
                 },
-                body: JSON.stringify({ source: sourceValue, target: targetValue })
+                body: JSON.stringify({ building: "Aspiration Building", target: targetValue })
             });
 
             if (response.status == 200) {
